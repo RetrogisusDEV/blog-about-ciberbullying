@@ -1,0 +1,378 @@
+/* all is free to use, in other project, no need same licence for use.
+
+you can contributing for FIX typos, or Formatting.
+
+retrogisusDEV 2024 */
+
+html {
+
+  font-family: monospace;
+  font-size: 20px;
+
+}
+
+body {
+  color: var(--fontColor);
+  background-color: var(--bgColor);
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+a {
+  color: #6666ff;
+}
+
+@keyframes fadeinAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#mmaterial-banner-overlay {
+  padding-block: 15px;
+  font-size: 20px;
+  width: 60vw;
+  color: var(--fontColor);
+  text-align: center;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  top: 0%;
+  position: fixed;
+  display: flexbox;
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+
+.mme {
+
+  font-size: 25px;
+  color: var(--fontColor);
+  text-align: center;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: flexbox;
+  animation: fadeinAnimation 1s ease-in-out;
+
+
+}
+
+.mma {
+
+  padding: 0px;
+  width: 10vw;
+
+}
+
+.mma button {
+
+  width: 20vw;
+  background-color: var(--buttonColor);
+  color: var(--buttonFontColor);
+  border-width: 0px;
+  border-radius: 15px;
+  margin-block: 5px;
+  padding: 10px;
+  padding-block: 5px;
+  padding-inline: 5%;
+  display: flexbox;
+  font-size: 90%;
+  transition: top 1s;
+  align-content: center;
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+.mmaa {
+
+  display: flex;
+
+}
+
+
+.mmaa button {
+
+  width: 60vw;
+  background-color: var(--buttonColor);
+  color: var(--buttonFontColor);
+  border-width: 0px;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
+  padding-block: 5px;
+  padding-inline: 5%;
+  display: flexbox;
+  font-size: 90%;
+  transition: top 1s;
+  align-content: center;
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+.mma table {
+  align-content: center;
+  justify-content: center;
+}
+
+.mmaterial-bubble-top {
+  color: var(--bubbleFontColor);
+  background-color: var(--bubbleBanner);
+  margin-top: 10px;
+  margin-inline: 5px;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+.mmaterial-bubble-middle {
+  color: var(--bubbleFontColor);
+  background-color: var(--bubbleContent);
+  text-align: center;
+  margin-inline: 5px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+.mmaterial-base h4 {
+  text-align: left;
+  margin-block: 10px;
+  margin-inline: 10px;
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+.mmaterial-button {
+  background-color: var(--buttonColor);
+  color: var(--buttonFontColor);
+  border-width: 0px;
+  border-radius: 15px;
+  margin-block: 5px;
+  padding: 10px;
+  padding-inline: 5%;
+  display: flexbox;
+  font-size: 90%;
+  align-content: center;
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+.mmaterial-base div {
+
+  text-align: left;
+  padding: 10px;
+  margin-block: 10px;
+  margin-inline: 5px;
+  border-radius: 15px;
+  display: flexbox;
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+.mmaterial-base-iframe {
+
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  display: inline-flexbox;
+  padding: 10px;
+  margin-block: 10px;
+  margin-inline: 5px;
+  border-radius: 15px;
+  display: flexbox;
+  animation: fadeinAnimation 1s ease-in-out;
+  vertical-align: middle;
+
+}
+
+.mmaterial-base-iframe iframe {
+
+  border-radius: 15px;
+  border-color: var(--titleColor);
+  display: flexblox;
+  min-width: 90vw;
+  min-height: 20vh;
+  max-width: 100vw;
+  max-height: 30vh;
+  align-content: center;
+
+}
+
+.mmaterial-base img {
+
+  text-align: left;
+  padding: 10px;
+  margin-block: 10px;
+  margin-inline: 5px;
+  border-radius: 15px;
+  border-color: var(--titleColor);
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+.mmaterial-div-content {
+
+  padding-inline: 15px;
+  padding-block: 5px;
+  background-color: var(--divColor);
+  margin-inline: 5px;
+  border-radius: 15px;
+  animation: fadeinAnimation 1s
+}
+
+.mmaterial-title {
+
+  color: var(--titleColor);
+  margin-block: 5px;
+  text-align: left;
+  padding-block: 5px;
+  font-size: 25px;
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+.mmaterial-div-button {
+
+  text-align: center;
+  padding: 5px;
+  margin-block: 5px;
+  border-radius: 0px;
+  display: flexbox;
+  animation: fadeinAnimation 1s ease-in-out;
+
+}
+
+.mmaterial-credit {
+  text-align: left;
+  background-color: rgb(20, 20, 20);
+  padding: 10px;
+  color: rgb(80, 80, 80);
+  margin-top: 15px;
+  animation: fadeinAnimation 1s ease-in-out;
+  padding-bottom: 50px;
+}
+
+.mmaterial-LightTheme-0 {
+
+  --bgColor: #efefef;
+  --buttonColor: #303f9f;
+  --buttonFontColor: #ffffff;
+  --fontColor: #000000;
+  --divColor: #dedeff;
+  --titleColor: #4444ff;
+  --bubbleBanner: #4444ff;
+  --bubbleContent: #6666ff;
+  --bubbleFontColor: #ffffff;
+
+
+}
+
+.mmaterial-DarkTheme-0 {
+
+  --bgColor: #000000;
+  --buttonColor: #82B1FF;
+  --buttonFontColor: rgba(0, 0, 150, 255);
+  --fontColor: #ffffff;
+  --divColor: #000033;
+  --titleColor: #82B1FF;
+  --bubbleBanner: #82B1FF;
+  --bubbleContent: #A6D3FF;
+  --bubbleFontColor: #222222;
+
+}
+
+.mmaterial-ReadTheme {
+
+  --bgColor: #000000;
+  --buttonColor: #ffffff;
+  --buttonFontColor: #000000;
+  --fontColor: #ffffff;
+  --divColor: #000000;
+  --titleColor: #ffffff;
+  --bubbleBanner: #000000;
+  --bubbleContent: #000000;
+  --bubbleFontColor: #ffffff;
+
+}
+
+
+.mmaterial-LightTheme-1 {
+
+  --bgColor: #efefef;
+  --buttonColor: #004D40;
+  --buttonFontColor: #ffffff;
+  --fontColor: #000000;
+  --divColor: #A7FFEB;
+  --titleColor: #00796B;
+  --bubbleBanner: #00796B;
+  --bubbleContent: #26A69A;
+  --bubbleFontColor: #ffffff;
+
+
+}
+
+.mmaterial-DarkTheme-1 {
+
+  --bgColor: #000000;
+  --buttonColor: #A7FFEB;
+  --buttonFontColor: rgba(0, 150, 0, 255);
+  --fontColor: #ffffff;
+  --divColor: #002200;
+  --titleColor: #64FFDA;
+  --bubbleBanner: #64FFDA;
+  --bubbleContent: #A7FFEB;
+  --bubbleFontColor: #222222;
+
+}
+
+.mmaterial-LightTheme-2 {
+
+  --bgColor: #efefef;
+  --buttonColor: #B71C1C;
+  --buttonFontColor: #ffffff;
+  --fontColor: #000000;
+  --divColor: #FFCDD2;
+  --titleColor: #E53935;
+  --bubbleBanner: #E53935;
+  --bubbleContent: #FF5252;
+  --bubbleFontColor: #ffffff;
+
+
+}
+
+.mmaterial-DarkTheme-2 {
+
+  --bgColor: #000000;
+  --buttonColor: #FF8A80;
+  --buttonFontColor: rgba(150, 0, 0, 255);
+  --fontColor: #ffffff;
+  --divColor: #220000;
+  --titleColor: #FF5252;
+  --bubbleBanner: #E53935;
+  --bubbleContent: #FF8A80;
+  --bubbleFontColor: #222222;
+
+}
