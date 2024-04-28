@@ -4,6 +4,10 @@ Source Code under GPL-3 License :
 
 */
 
+/* svg Material Icon copyright of google under GPL-3 License */
+
+/* Sponsor Initialization */
+
 console.error("MinimalistMaterial By RetrogisusDEV")
 
 /* Theme Changer V2 by RetrogisusDEV
@@ -82,19 +86,21 @@ function MenuSlider(Ch) {
 
   if (Ch == 1) {
 
-    ms.innerHTML = `<div id="mm" class="mme"><div class="mma"><button onclick="MenuSlider(0)">≡</button></div><div class="mmaterial-div-content"><div class="mmaa"><button onclick="ThemeMode(0,ToneCurrent)">✴</button><button onclick="ThemeMode(ThemeCurrent,0)">Azulado</button></div><div class="mmaa"><button onclick="ThemeMode(1,ToneCurrent)">☪</button><button onclick="ThemeMode(ThemeCurrent,1)">Verdozo</button></div><div class="mmaa"><button onclick="ThemeMode(2,ToneCurrent)">⊗</button><button onclick="ThemeMode(ThemeCurrent,2)">Rojizo</button></div></div></div></div>`;
+    ms.innerHTML = `<div id="mm" class="mme"><div class="mma"><button onclick="MenuSlider(0)">${burgersvg}</button></div><div class="mmaterial-div-content"><h4 style="text-align:center;margin-block: 10px; color: var(--titleColor);">Temas</h4><div class="mmaa"><button onclick="ThemeMode(0,ToneCurrent)">${sunsvg}</button><button onclick="ThemeMode(ThemeCurrent,0)">Azulado</button></div><div class="mmaa"><button onclick="ThemeMode(1,ToneCurrent)">${moonsvg}</button><button onclick="ThemeMode(ThemeCurrent,1)">Verdozo</button></div><div class="mmaa"><button onclick="ThemeMode(2,ToneCurrent)">${viewmodesvg}</button><button onclick="ThemeMode(ThemeCurrent,2)">Rojizo</button></div></div></div></div>`;
 
     Ch = 0;
 
   } else {
 
-    ms.innerHTML = `<div id="mm"><div class="mma"><button onclick="MenuSlider(1)">≡</button></div></div>`;
+    ms.innerHTML = `<div id="mm"><div class="mma"><button onclick="MenuSlider(1)">${burgersvg}</button></div></div>`;
 
     Ch = 1;
 
   }
 
 }
+
+MenuSlider(0);
 
 /* bubbleExpand V1 by Retrogisus
 Expand the bubble for view more content or hide the bubble content. */
@@ -109,7 +115,7 @@ function bubbleExpand(id, content) {
 
   } else {
 
-    element.innerHTML = `<p class="mmaterial-bubble-middle"></p>`;
+    element.innerHTML = ``;
 
   }
 
