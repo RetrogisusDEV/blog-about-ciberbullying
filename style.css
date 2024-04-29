@@ -42,7 +42,7 @@ a {
     width: 60vw;
     height: 64px;
     color: var(--fontColor);
-    text-align: center;
+    text-align: right;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     margin-top: 0px;
