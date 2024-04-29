@@ -13,15 +13,13 @@ console.error("MinimalistMaterial By RetrogisusDEV");
 /* Theme Changer V2 by RetrogisusDEV
 Change the colors of webpage using bottons or initializer. */
 
-var ThemeCurrent = localStorage.getItem('ThemeVar');
-var ToneCurrent = localStorage.getItem('ToneVar');
-
-if (!ThemeCurrent) {
-  ThemeCurrent = 0;
-  ToneCurrent = 0;
+if (localStorage.getItem('ThemeVar') === undefined) {
   localStorage.setItem('ThemeVar', 0);
   localStorage.setItem('ToneVar', 0);
 }
+
+var ThemeCurrent = localStorage.getItem('ThemeVar');
+var ToneCurrent = localStorage.getItem('ToneVar');
 
 // Initializing Theme
 
