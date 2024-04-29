@@ -39,7 +39,7 @@ a {
 #mmaterial-banner-overlay {
     padding-block: 2px;
     font-size: 25px;
-    width: 60vw;
+    width: 40vw;
     height: 64px;
     color: var(--fontColor);
     text-align: right;
@@ -47,8 +47,8 @@ a {
     border-bottom-right-radius: 0px;
     margin-top: 0px;
     margin-bottom: 10px;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
     top: 0%;
     position: fixed;
     display: flex;
