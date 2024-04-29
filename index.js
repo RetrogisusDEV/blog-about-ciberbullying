@@ -8,7 +8,7 @@ Source Code under GPL-3 License :
 
 /* Sponsor Initialization */
 
-console.error("MinimalistMaterial By RetrogisusDEV")
+console.error("MinimalistMaterial By RetrogisusDEV");
 
 /* Theme Changer V2 by RetrogisusDEV
 Change the colors of webpage using bottons or initializer. */
