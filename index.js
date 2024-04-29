@@ -19,8 +19,8 @@ if (localStorage.ThemeVar === undefined) {
   console.log('Definidos');
 }
 
-var ThemeCurrent = localStorage.ThemeVar;
-var ToneCurrent = localStorage.ToneVar;
+var ThemeCurrent = parseInt(localStorage.ThemeVar);
+var ToneCurrent = parseInt(localStorage.ToneVar);
 
 // Initializing Theme
 
