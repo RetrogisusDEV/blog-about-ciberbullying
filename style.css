@@ -233,7 +233,7 @@ a {
     text-align: center;
     padding: 10px;
     margin-block: 10px;
-    margin-inline: 5px;
+    margin-inline: 0px;
     border-radius: 15px;
     border-width: 5px;
     border-color: var(--titleColor);
