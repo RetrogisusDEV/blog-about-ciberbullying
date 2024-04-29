@@ -13,12 +13,19 @@ console.error("MinimalistMaterial By RetrogisusDEV");
 /* Theme Changer V2 by RetrogisusDEV
 Change the colors of webpage using bottons or initializer. */
 
-var ThemeCurrent = 0;
-var ToneCurrent = 0;
+var ThemeCurrent = localStorage.getItem('ThemeVar');
+var ToneCurrent = localStorage.getItem('ToneVar');
+
+if (!ThemeCurrent) {
+  ThemeCurrent = 0;
+  ToneCurrent = 0;
+  localStorage.setItem('ThemeVar', 0);
+  localStorage.setItem('ToneVar', 0);
+}
 
 // Initializing Theme
 
-ThemeMode(0, 0);
+ThemeMode(ThemeCurrent, ToneCurrent);
 
 
 function ThemeMode(theme, tone) {
@@ -75,6 +82,10 @@ function ThemeMode(theme, tone) {
       console.log("Read Optimized Theme Set - Tone : " + tone);
       break;
   }
+
+localStorage.setItem('ThemeVar', ThemeCurrent);
+localStorage.setItem('ToneVar', ToneCurrent);
+  
 }
 
 /* Expand menu V1 by RetrogisusDEV
