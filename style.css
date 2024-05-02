@@ -6,382 +6,394 @@ retrogisusDEV 2024 */
 
 html {
 
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 600;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 600;
 }
 
 body {
-    color: var(--fontColor);
-    background-color: var(--bgColor);
-    margin-block: 0px;
-    margin-inline: 0px;
+  color: var(--fontColor);
+  background-color: var(--bgColor);
+  margin-block: 0px;
+  margin-inline: 0px;
 
 }
 
 a {
-    color: #4444ff;
+  color: #4444ff;
 }
 
 @keyframes fadeinAnimation {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 #mmaterial-banner-overlay {
-    padding-block: 2px;
-    font-size: 25px;
-    width: 40vw;
-    height: 64px;
-    color: var(--fontColor);
-    text-align: right;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-left: 30vw;
-    margin-right: 30vw;
-    top: 0%;
-    position: fixed;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    animation: fadeinAnimation 1s ease-in-out;
+  padding-block: 2px;
+  font-size: 25px;
+  width: 40vw;
+  height: 64px;
+  color: var(--fontColor);
+  text-align: right;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  top: 0%;
+  position: fixed;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  animation: fadeinAnimation 1s ease-in-out;
+  z-index: 9997;
+}
+
+#mmaterial-banner-background {
+
+  background-color: var(--bgColor);
+  height: 64px;
+  position: fixed;
+  display: fixed;
+  z-index: 9990;
+  top: 0;
+  width: 100vw;
 
 }
 
-
 .mme {
 
-    font-size: 25px;
-    color: var(--fontColor);
-    text-align: center;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    display: flexbox;
-    animation: fadeinAnimation 1s ease-in-out;
-
+  font-size: 25px;
+  color: var(--fontColor);
+  text-align: center;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: flexbox;
+  animation: fadeinAnimation 1s ease-in-out;
 
 }
 
 .mma {
 
-    padding: 0px;
-    width: 10vw;
-    fill: var(--buttonFontColor);
+  padding: 0px;
+  width: 10vw;
+  fill: var(--buttonFontColor);
 
 }
 
 .mma button {
 
-    width: 20vw;
-    background-color: var(--buttonColor);
-    color: var(--buttonFontColor);
-    border-width: 0px;
-    border-radius: 15px;
-    margin-inline: 5vw;
-    margin-block: 5px;
-    padding: 10px;
-    padding-block: 5px;
-    padding-inline: 5%;
-    display: flexbox;
-    font-size: 90%;
-    transition: top 1s;
-    align-content: center;
-    animation: fadeinAnimation 1s ease-out;
+  width: 20vw;
+  background-color: var(--buttonColor);
+  color: var(--buttonFontColor);
+  border-width: 0px;
+  border-radius: 15px;
+  margin-inline: 5vw;
+  margin-block: 5px;
+  padding: 10px;
+  padding-block: 5px;
+  padding-inline: 5%;
+  display: flexbox;
+  font-size: 90%;
+  transition: top 1s;
+  align-content: center;
+  animation: fadeinAnimation 1s ease-out;
 
 }
 
 .mmaa {
 
-    display: flex;
+  display: flex;
 
 }
 
 
 .mmaa button {
 
-    width: 60vw;
-    background-color: var(--buttonColor);
-    color: var(--buttonFontColor);
-    border-width: 0px;
-    border-radius: 15px;
-    margin: 5px;
-    padding: 10px;
-    padding-block: 5px;
-    padding-inline: 5%;
-    display: flexbox;
-    font-size: 90%;
-    transition: top 1s;
-    align-content: center;
-    animation: fadeinAnimation 1s ease-in-out;
+  width: 60vw;
+  background-color: var(--buttonColor);
+  color: var(--buttonFontColor);
+  border-width: 0px;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
+  padding-block: 5px;
+  padding-inline: 5%;
+  display: flexbox;
+  font-size: 90%;
+  transition: top 1s;
+  align-content: center;
+  animation: fadeinAnimation 1s ease-in-out;
 
 }
 
 .mmaa svg {
 
-    fill: var(--buttonFontColor);
+  fill: var(--buttonFontColor);
 
 }
 
 .mmaterial-bubble-top {
-    color: var(--bubbleFontColor);
-    background-color: var(--bubbleBanner);
-    margin-top: 10px;
-    margin-inline: 10vw;
-    padding: 10px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    font-size: 20px;
-    margin-bottom: 0px;
-    text-align: center;
-    animation: fadeinAnimation 1s ease-in-out;
+  color: var(--bubbleFontColor);
+  background-color: var(--bubbleBanner);
+  margin-top: 10px;
+  margin-inline: 10vw;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  animation: fadeinAnimation 1s ease-in-out;
 
 }
 
 .mmaterial-bubble-middle {
-    color: var(--bubbleFontColor);
-    background-color: var(--bubbleContent);
-    text-align: center;
-    margin-inline: 10vw;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 20px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    animation: fadeinAnimation 1s ease-in-out;
+  color: var(--bubbleFontColor);
+  background-color: var(--bubbleContent);
+  text-align: center;
+  margin-inline: 10vw;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  animation: fadeinAnimation 1s ease-in-out;
 
 }
 
 .mmaterial-base h4 {
-    text-align: left;
-    margin-block: 10px;
-    margin-inline: 10px;
-    animation: fadeinAnimation 1s ease-in-out;
+  text-align: left;
+  margin-block: 10px;
+  margin-inline: 10px;
+  animation: fadeinAnimation 1s ease-in-out;
 
 }
 
 .mmaterial-button {
-    background-color: var(--buttonColor);
-    color: var(--buttonFontColor);
-    border-width: 0px;
-    border-radius: 15px;
-    margin-block: 5px;
-    padding: 10px;
-    padding-inline: 5%;
-    display: flexbox;
-    font-size: 90%;
-    align-content: center;
-    animation: fadeinAnimation 1s ease-in-out;
+  background-color: var(--buttonColor);
+  color: var(--buttonFontColor);
+  border-width: 0px;
+  border-radius: 15px;
+  margin-block: 5px;
+  padding: 10px;
+  padding-inline: 5%;
+  display: flexbox;
+  font-size: 90%;
+  align-content: center;
+  animation: fadeinAnimation 1s ease-in-out;
 
 }
 
 .mmaterial-base div {
 
-    text-align: left;
-    padding: 10px;
-    margin-block: 10px;
-    margin-inline: 5px;
-    border-radius: 15px;
-    display: flexbox;
-    animation: fadeinAnimation 1s ease-in-out;
+  text-align: left;
+  padding: 10px;
+  margin-block: 10px;
+  margin-inline: 5px;
+  border-radius: 15px;
+  display: flexbox;
+  animation: fadeinAnimation 1s ease-in-out;
 
 }
 
 .mmaterial-base-media {
 
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    display: inline-flexbox;
-    padding: 10px;
-    margin-block: 10px;
-    margin-inline: 5vw;
-    display: flexbox;
-    animation: fadeinAnimation 1s ease-in-out;
-    vertical-align: middle;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  display: inline-flexbox;
+  padding: 10px;
+  margin-block: 10px;
+  margin-inline: 5vw;
+  display: flexbox;
+  animation: fadeinAnimation 1s ease-in-out;
+  vertical-align: middle;
 
 }
 
 .mmaterial-base-media iframe {
 
-    border-radius: 15px;
-    border-width: 5px;
-    border-color: var(--titleColor);
-    display: flexblox;
-    min-width: 70vw;
-    max-width: 90vw;
-    min-height: 30vw;
-    max-height: 40vw;
-    align-content: center;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: var(--titleColor);
+  display: flexblox;
+  min-width: 70vw;
+  max-width: 90vw;
+  min-height: 30vw;
+  max-height: 40vw;
+  align-content: center;
 
 }
 
 .mmaterial-base-media img {
 
-    text-align: center;
-    padding: 10px;
-    margin-block: 10px;
-    margin-inline: 0px;
-    border-radius: 15px;
-    border-width: 5px;
-    border-color: var(--titleColor);
-    animation: fadeinAnimation 1s ease-in-out;
+  text-align: center;
+  padding: 10px;
+  margin-block: 10px;
+  margin-inline: 0px;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: var(--titleColor);
+  animation: fadeinAnimation 1s ease-in-out;
 
 }
 
 .mmaterial-div-content {
 
-    padding-inline: 15px;
-    padding-block: 5px;
-    background-color: var(--divColor);
-    margin-block: 10px;
-    margin-inline: 5vw;
-    border-radius: 15px;
-    animation: fadeinAnimation 1s
+  padding-inline: 15px;
+  padding-block: 5px;
+  background-color: var(--divColor);
+  margin-block: 10px;
+  margin-inline: 5vw;
+  border-radius: 15px;
+  animation: fadeinAnimation 1s
 }
 
 .mmaterial-title {
 
-    font-family: "Noto Sans", sans-serif;
-    font-size: 25px;
-    color: var(--titleColor);
-    margin-block: 5px;
-    text-align: left;
-    padding-block: 5px;
-    animation: fadeinAnimation 1s ease-in-out;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 25px;
+  color: var(--titleColor);
+  margin-block: 5px;
+  text-align: left;
+  padding-block: 5px;
+  animation: fadeinAnimation 1s ease-in-out;
 
 }
 
 .mmaterial-div-button {
 
-    text-align: center;
-    margin: 5px;
-    border-radius: 0px;
-    display: flexbox;
-    animation: fadeinAnimation 1s ease-in-out;
+  text-align: center;
+  margin: 5px;
+  border-radius: 0px;
+  display: flexbox;
+  animation: fadeinAnimation 1s ease-in-out;
+  z-index: 9998;
+
 
 }
 
 .mmaterial-credit {
-    text-align: left;
-    background-color: rgb(20, 20, 20);
-    padding: 10px;
-    color: rgb(80, 80, 80);
-    margin-top: 15px;
-    animation: fadeinAnimation 1s ease-in-out;
-    padding-bottom: 50px;
+  text-align: left;
+  background-color: rgb(20, 20, 20);
+  padding: 10px;
+  color: rgb(80, 80, 80);
+  margin-top: 15px;
+  animation: fadeinAnimation 1s ease-in-out;
+  padding-bottom: 50px;
 }
 
 .mmaterial-LightTheme-0 {
 
-    --bgColor: #efefef;
-    --buttonColor: #303f9f;
-    --buttonFontColor: #ffffff;
-    --fontColor: #000000;
-    --divColor: #BBDEFB;
-    --titleColor: #0D47A1;
-    --bubbleBanner: #4444ff;
-    --bubbleContent: #6666ff;
-    --bubbleFontColor: #ffffff;
+  --bgColor: #efefef;
+  --buttonColor: #303f9f;
+  --buttonFontColor: #ffffff;
+  --fontColor: #000000;
+  --divColor: #BBDEFB;
+  --titleColor: #0D47A1;
+  --bubbleBanner: #4444ff;
+  --bubbleContent: #6666ff;
+  --bubbleFontColor: #ffffff;
 
 
 }
 
 .mmaterial-DarkTheme-0 {
 
-    --bgColor: #000000;
-    --buttonColor: #82B1FF;
-    --buttonFontColor: rgba(0, 0, 150, 255);
-    --fontColor: #ffffff;
-    --divColor: #000022;
-    --titleColor: #82B1FF;
-    --bubbleBanner: #82B1FF;
-    --bubbleContent: #A6D3FF;
-    --bubbleFontColor: #222222;
+  --bgColor: #000000;
+  --buttonColor: #82B1FF;
+  --buttonFontColor: rgba(0, 0, 150, 255);
+  --fontColor: #ffffff;
+  --divColor: #000022;
+  --titleColor: #82B1FF;
+  --bubbleBanner: #82B1FF;
+  --bubbleContent: #A6D3FF;
+  --bubbleFontColor: #222222;
 
 }
 
 .mmaterial-ReadTheme {
 
-    --bgColor: #ffffff;
-    --buttonColor: #dddddd;
-    --buttonFontColor: #000000;
-    --fontColor: #000000;
-    --divColor: #ffffff;
-    --titleColor: #000000;
-    --bubbleBanner: #dddddd;
-    --bubbleContent: #ededed;
-    --bubbleFontColor: #000000;
+  --bgColor: #ffffff;
+  --buttonColor: #dddddd;
+  --buttonFontColor: #000000;
+  --fontColor: #000000;
+  --divColor: #ffffff;
+  --titleColor: #000000;
+  --bubbleBanner: #dddddd;
+  --bubbleContent: #ededed;
+  --bubbleFontColor: #000000;
 
 }
 
 
 .mmaterial-LightTheme-1 {
 
-    --bgColor: #efefef;
-    --buttonColor: #004D40;
-    --buttonFontColor: #ffffff;
-    --fontColor: #000000;
-    --divColor: #B2DFDB;
-    --titleColor: #00796B;
-    --bubbleBanner: #00796B;
-    --bubbleContent: #26A69A;
-    --bubbleFontColor: #ffffff;
+  --bgColor: #efefef;
+  --buttonColor: #004D40;
+  --buttonFontColor: #ffffff;
+  --fontColor: #000000;
+  --divColor: #B2DFDB;
+  --titleColor: #00796B;
+  --bubbleBanner: #00796B;
+  --bubbleContent: #26A69A;
+  --bubbleFontColor: #ffffff;
 
 
 }
 
 .mmaterial-DarkTheme-1 {
 
-    --bgColor: #000000;
-    --buttonColor: #A7FFEB;
-    --buttonFontColor: rgba(0, 150, 0, 255);
-    --fontColor: #ffffff;
-    --divColor: #001100;
-    --titleColor: #64FFDA;
-    --bubbleBanner: #64FFDA;
-    --bubbleContent: #A7FFEB;
-    --bubbleFontColor: #222222;
+  --bgColor: #000000;
+  --buttonColor: #A7FFEB;
+  --buttonFontColor: rgba(0, 150, 0, 255);
+  --fontColor: #ffffff;
+  --divColor: #001100;
+  --titleColor: #64FFDA;
+  --bubbleBanner: #64FFDA;
+  --bubbleContent: #A7FFEB;
+  --bubbleFontColor: #222222;
 
 }
 
 .mmaterial-LightTheme-2 {
 
-    --bgColor: #efefef;
-    --buttonColor: #B71C1C;
-    --buttonFontColor: #ffffff;
-    --fontColor: #000000;
-    --divColor: #FFCDD2;
-    --titleColor: #E53935;
-    --bubbleBanner: #E53935;
-    --bubbleContent: #FF5252;
-    --bubbleFontColor: #ffffff;
+  --bgColor: #efefef;
+  --buttonColor: #B71C1C;
+  --buttonFontColor: #ffffff;
+  --fontColor: #000000;
+  --divColor: #FFCDD2;
+  --titleColor: #E53935;
+  --bubbleBanner: #E53935;
+  --bubbleContent: #FF5252;
+  --bubbleFontColor: #ffffff;
 
 
 }
 
 .mmaterial-DarkTheme-2 {
 
-    --bgColor: #000000;
-    --buttonColor: #FF8A80;
-    --buttonFontColor: rgba(150, 0, 0, 255);
-    --fontColor: #ffffff;
-    --divColor: #110000;
-    --titleColor: #FF5252;
-    --bubbleBanner: #E53935;
-    --bubbleContent: #FF8A80;
-    --bubbleFontColor: #222222;
+  --bgColor: #000000;
+  --buttonColor: #FF8A80;
+  --buttonFontColor: rgba(150, 0, 0, 255);
+  --fontColor: #ffffff;
+  --divColor: #110000;
+  --titleColor: #FF5252;
+  --bubbleBanner: #E53935;
+  --bubbleContent: #FF8A80;
+  --bubbleFontColor: #222222;
 
 }
