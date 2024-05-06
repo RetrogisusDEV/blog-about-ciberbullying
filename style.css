@@ -26,6 +26,10 @@ a {
   color: #4444ff;
 }
 
+li {
+  margin-block: 5px;
+}
+
 @keyframes fadeinAnimation {
   from {
     opacity: 0;
@@ -33,6 +37,26 @@ a {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes MoveDown {
+  from {
+    padding-block: 0%;
+  }
+
+  to {
+    padding-block: -200%;
+  }
+}
+
+@keyframes Zoomeffect {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 120%;
   }
 }
 
@@ -54,7 +78,7 @@ a {
   display: flex;
   align-content: center;
   justify-content: center;
-  animation: fadeinAnimation 1s ease-in-out;
+  animation: MoveDown 1s ease-in-out;
   z-index: 9997;
 }
 
@@ -67,6 +91,7 @@ a {
   z-index: 9990;
   top: 0;
   width: 100vw;
+  animation: MoveDown 1s ease-in-out;
 
 }
 
@@ -80,7 +105,6 @@ a {
   margin-top: 0px;
   margin-bottom: 10px;
   display: flexbox;
-  animation: fadeinAnimation 1s ease-in-out;
 
 }
 
@@ -134,7 +158,7 @@ a {
   font-size: 90%;
   transition: top 1s;
   align-content: center;
-  animation: fadeinAnimation 1s ease-in-out;
+  animation: MoveDown 1s ease-out;
 
 }
 
@@ -156,7 +180,10 @@ a {
   margin-bottom: 0px;
   text-align: center;
   animation: fadeinAnimation 1s ease-in-out;
+}
 
+.mmaterial-bubble-top:hover {
+  animation: Zoomefecct 1s ease-in-out;
 }
 
 .mmaterial-bubble-middle {
@@ -170,8 +197,12 @@ a {
   font-size: 20px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  animation: fadeinAnimation 1s ease-in-out;
+  animation: MoveDown 1s ease-out;
 
+}
+
+.mmaterial-bubble-middle:hover {
+  animation: Zoomeffect 1s ease-in-out;
 }
 
 .mmaterial-base h4 {
@@ -259,7 +290,8 @@ a {
   margin-block: 10px;
   margin-inline: 5vw;
   border-radius: 15px;
-  animation: fadeinAnimation 1s
+  animation: MoveDown 1s ease-out;
+
 }
 
 .mmaterial-title {
