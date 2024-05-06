@@ -32,6 +32,29 @@
       z-index: 9999;
     }
 
+    .ononffline {
+      width: 70vw;
+      text-align: center;
+      background-color: var(--buttonColor);
+      color: var(--buttonFontColor);
+      border-width: 0px;
+      border-radius: 15px;
+      margin-inline: 10vw;
+      margin-block: 5px;
+      padding-block: 20px;
+      padding-inline: 5%;
+      font-size: 90%;
+      transition: top 1s;
+      align-content: center;
+      animation: move 1s ease-out;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 90%;
+      buttom: 0%;
+      z-index: 9999;
+    }
+
     @keyframes spin {
       0% {
         transform: rotate(0deg);
@@ -41,6 +64,16 @@
         transform: rotate(360deg);
       }
     }
+
+    @keyframes move {
+      0% {
+        top: 140%;
+      }
+
+      100% {
+        top: 90%;
+      }
+    }
   </style>
 
 </head>
@@ -48,9 +81,10 @@
 <body>
 
   <div class="loader"></div>
+  <!--<div class="ononffline"><b>Sin Conexion a la WEB</b></div>-->
 
   <div id="mmaterial-banner-background">
-    <div class="mmaterial-div-button" style="align-content: right; justify-content: ">
+    <div class="mmaterial-div-button" style="align-content: left; justify-content: left; ">
 
       <div class="mme" id="mm">
 
@@ -254,6 +288,8 @@
       <a href="https://github.com/RetrogisusDEV/blog-about-cyberbullying">By RetrogisusDEV</a>
 
     </div>
+    
+    <p>Revision : 12a</p>
 
     <p>UPTLL "Juana Ramirez"</p>
 
@@ -271,6 +307,10 @@
   window.onload = function() {
     document.querySelector('.loader').style.display = 'none';
   };
+
+  /*window.ononline = function() {
+    document.querySelector('.onffline').style.display = 'none';
+  };*/
 </script>
 
 </html>
