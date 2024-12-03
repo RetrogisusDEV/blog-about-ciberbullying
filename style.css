@@ -1,321 +1,388 @@
 /* all is free to use, in other project, no need same licence for use.
-
-you can contributing for FIX typos, or Formatting.
-
+you can contribute for FIX typos, or Formatting.
 retrogisusDEV 2024 */
 
-html {
+/* Fluent Design & Material You Inspired CSS by retrogisusDEV 2024 */
+:root {
+  --fluent-blur: blur(24px);
+  --fluent-shadow: 0 6px 10px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+  --fluent-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --fluent-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --fluent-easing-emphasize: cubic-bezier(0.2, 0, 0, 1);
+}
 
+.loader {
+  border: 4px solid transparent;
+  border-top: 4px solid var(--titleColor);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: fluent-spin 1.5s var(--fluent-easing-emphasize) infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9999;
+  box-shadow: var(--fluent-shadow);
+  backdrop-filter: var(--fluent-blur);
+  background-color: rgba(255,255,255,0.1);
+  will-change: transform;
+}
+
+@keyframes fluent-spin {
+  0% { 
+    transform: rotate(0deg) scale(0.8); 
+    opacity: 0.7;
+  }
+  50% { 
+    transform: rotate(180deg) scale(1.2); 
+    opacity: 1;
+  }
+  100% { 
+    transform: rotate(360deg) scale(0.8); 
+    opacity: 0.7;
+  }
+}
+
+.ononffline {
+  width: 70vw;
+  text-align: center;
+  background-color: var(--buttonColor);
+  color: var(--buttonFontColor);
+  border-radius: 12px;
+  margin-inline: 10vw;
+  margin-block: 5px;
+  padding: 15px;
+  font-size: 0.9rem;
+  transition: var(--fluent-transition);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 90%;
+  z-index: 9999;
+  box-shadow: var(--fluent-shadow);
+  backdrop-filter: var(--fluent-blur);
+  transform: translateY(20px);
+  opacity: 0.95;
+  will-change: transform, opacity;
+  animation: fluent-slide-up 0.4s var(--fluent-easing-standard) forwards;
+}
+
+@keyframes fluent-slide-up {
+  from { 
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to { 
+    transform: translateY(0);
+    opacity: 0.95;
+  }
+}
+
+.mmaterial-button, .mma button, .mmaa button {
+  background-color: var(--buttonColor);
+  color: var(--buttonFontColor);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  transition: var(--fluent-transition);
+  box-shadow: var(--fluent-shadow);
+  position: relative;
+  overflow: hidden;
+  will-change: transform, box-shadow;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mmaterial-button:hover, .mma button:hover, .mmaa button:hover {
+  background-color: var(--buttonHoverColor);
+  transform: scale(1.03);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.18);
+}
+
+.mmaterial-button::before, .mma button::before, .mmaa button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center, 
+    rgba(255,255,255,0.2) 0%, 
+    rgba(255,255,255,0.05) 100%
+  );
+  opacity: 0;
+  transition: var(--fluent-transition);
+}
+
+.mmaterial-button:hover::before, 
+.mma button:hover::before, 
+.mmaa button:hover::before {
+  opacity: 1;
+}
+
+.mmaterial-button:active, 
+.mma button:active, 
+.mmaa button:active {
+  transform: scale(0.97);
+  transition-duration: 0.1s;
+}
+
+#mmaterial-banner-overlay {
+  backdrop-filter: var(--fluent-blur);
+  box-shadow: var(--fluent-shadow);
+  border-radius: 16px;
+}
+
+.mmaterial-div-content {
+  transition: var(--fluent-transition);
+  box-shadow: var(--fluent-shadow);
+  border-radius: 12px;
+  will-change: transform;
+}
+
+.mmaterial-div-content:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+html {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 600;
+  font-variation-settings: "wdth" 600;
 }
 
 body {
   color: var(--fontColor);
   background-color: var(--bgColor);
-  margin-block: 0px;
-  margin-inline: 0px;
-
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
 }
 
 a {
-  color: #4444ff;
+  color: var(--linkColor);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--linkHoverColor);
 }
 
 li {
   margin-block: 5px;
 }
 
-@keyframes fadeinAnimation {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
 
-@keyframes MoveDown {
+@keyframes moveDown {
   from {
-    padding-block: 0%;
+    transform: translateY(-20px);
   }
-
   to {
-    padding-block: -200%;
-  }
-}
-
-@keyframes Zoomeffect {
-  from {
-    height: 0%;
-  }
-
-  to {
-    height: 120%;
+    transform: translateY(0);
   }
 }
 
 #mmaterial-banner-overlay {
-  padding-block: 2px;
-  font-size: 25px;
-  width: 40vw;
-  height: 64px;
+  font-size: 1.5rem;
   color: var(--fontColor);
-  text-align: right;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  margin-left: 30vw;
-  margin-right: 30vw;
-  top: 0%;
+  text-align: center;
   position: fixed;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  animation: MoveDown 1s ease-in-out;
-  z-index: 9997;
+  width: 100%;
+  top: 0;
+  z-index: 9989;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for the background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  animation: moveDown 0.5s ease-in-out;
 }
 
 #mmaterial-banner-background {
-
-  background-color: var(--bgColor);
   height: 64px;
   position: fixed;
-  display: fixed;
+  width: 100%;
   z-index: 9990;
-  top: 0;
-  width: 100vw;
-  animation: MoveDown 1s ease-in-out;
-
+  animation: moveDown 0.5s ease-in-out;
 }
 
 .mme {
-
-  font-size: 25px;
+  font-size: 1.5rem;
   color: var(--fontColor);
-  text-align: center;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  display: flexbox;
-
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .mma {
-
-  padding: 0px;
-  width: 10vw;
-  fill: var(--buttonFontColor);
-
+  margin: 0px 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .mma button {
-
-  width: 20vw;
+  width: auto;
   background-color: var(--buttonColor);
   color: var(--buttonFontColor);
-  border-width: 0px;
-  border-radius: 15px;
-  margin-inline: 5vw;
-  margin-block: 5px;
-  padding: 10px;
-  padding-block: 5px;
-  padding-inline: 5%;
-  display: flexbox;
-  font-size: 90%;
-  transition: top 1s;
-  align-content: center;
-  animation: fadeinAnimation 1s ease-out;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.mma button:hover {
+  background-color: var(--buttonHoverColor); /* Add hover color */
+  transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 .mmaa {
-
   display: flex;
-
+  flex-wrap: nowrap;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 
 .mmaa button {
-
-  width: 60vw;
+  width: 80%;
   background-color: var(--buttonColor);
   color: var(--buttonFontColor);
-  border-width: 0px;
-  border-radius: 15px;
-  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  margin: 5px 10px;
   padding: 10px;
-  padding-block: 5px;
-  padding-inline: 5%;
-  display: flexbox;
-  font-size: 90%;
-  transition: top 1s;
-  align-content: center;
-  animation: MoveDown 1s ease-out;
-
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.mmaa svg {
-
-  fill: var(--buttonFontColor);
-
+.mmaa button:hover {
+  background-color: var(--buttonHoverColor);
+  transform: scale(1.05);
 }
 
 .mmaterial-bubble-top {
   color: var(--bubbleFontColor);
   background-color: var(--bubbleBanner);
-  margin-top: 10px;
-  margin-inline: 10vw;
+  margin: 10px 5vw;
   padding: 10px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  font-size: 20px;
-  margin-bottom: 0px;
+  border-radius: 15px;
+  font-size: 1.25rem;
   text-align: center;
-  animation: fadeinAnimation 1s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .mmaterial-bubble-top:hover {
-  animation: Zoomefecct 1s ease-in-out;
+  color: var(--bubbleFontColor);
+  background-color: var(--bubbleContent);
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .mmaterial-bubble-middle {
   color: var(--bubbleFontColor);
   background-color: var(--bubbleContent);
   text-align: center;
-  margin-inline: 10vw;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin: 10px 5vw;
   padding: 10px;
-  font-size: 20px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  animation: MoveDown 1s ease-out;
-
-}
-
-.mmaterial-bubble-middle:hover {
-  animation: Zoomeffect 1s ease-in-out;
+  border-radius: 15px;
+  animation: fadeIn 0.5s ease-out;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .mmaterial-base h4 {
   text-align: left;
-  margin-block: 10px;
-  margin-inline: 10px;
-  animation: fadeinAnimation 1s ease-in-out;
-
+  margin: 10px;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .mmaterial-button {
   background-color: var(--buttonColor);
   color: var(--buttonFontColor);
-  border-width: 0px;
-  border-radius: 15px;
-  margin-block: 5px;
-  padding: 10px;
-  padding-inline: 5%;
-  display: flexbox;
-  font-size: 90%;
-  align-content: center;
-  animation: fadeinAnimation 1s ease-in-out;
+  border: none;
+  border-radius: 20px;
+  margin: 5px 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.mmaterial-button:hover {
+  background-color: var(--buttonHoverColor);
+  transform: scale(1.05);
 }
 
 .mmaterial-base div {
-
   text-align: left;
   padding: 10px;
-  margin-block: 10px;
-  margin-inline: 5px;
+  margin: 10px 5px;
   border-radius: 15px;
-  display: flexbox;
-  animation: fadeinAnimation 1s ease-in-out;
-
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .mmaterial-base-media {
-
   text-align: center;
-  align-content: center;
-  justify-content: center;
-  display: inline-flexbox;
   padding: 10px;
-  margin-block: 10px;
-  margin-inline: 5vw;
-  display: flexbox;
-  animation: fadeinAnimation 1s ease-in-out;
-  vertical-align: middle;
-
+  margin: 10px 5vw;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .mmaterial-base-media iframe {
-
   border-radius: 15px;
-  border-width: 5px;
-  border-color: var(--titleColor);
-  display: flexblox;
+  border: 5px solid var(--titleColor);
   min-width: 70vw;
   max-width: 90vw;
   min-height: 30vw;
   max-height: 40vw;
-  align-content: center;
-
 }
 
 .mmaterial-base-media img {
-
-  text-align: center;
-  padding: 10px;
-  margin-block: 10px;
-  margin-inline: 0px;
   border-radius: 15px;
-  border-width: 5px;
-  border-color: var(--titleColor);
-  animation: fadeinAnimation 1s ease-in-out;
-
+  margin: 10px 0;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .mmaterial-div-content {
-
-  padding-inline: 15px;
-  padding-block: 5px;
+  padding: 15px;
   background-color: var(--divColor);
-  margin-block: 10px;
-  margin-inline: 5vw;
+  margin: 20px 5vw;
   border-radius: 15px;
-  animation: MoveDown 1s ease-out;
-
+  animation: moveDown 0.5s ease-out;
 }
 
 .mmaterial-title {
-
-  font-family: "Noto Sans", sans-serif;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: var(--titleColor);
-  margin-block: 5px;
+  margin: 5px 0;
   text-align: left;
-  padding-block: 5px;
-  animation: fadeinAnimation 1s ease-in-out;
-
+  padding: 5px 0;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .mmaterial-div-button {
-
   text-align: center;
   margin: 5px;
-  border-radius: 0px;
-  display: flexbox;
-  animation: fadeinAnimation 1s ease-in-out;
+  border-radius: 0;
+  display: flex;
+  animation: fadeIn 0.5s ease-in-out;
   z-index: 9998;
-
-
 }
 
 .mmaterial-credit {
@@ -324,14 +391,14 @@ li {
   padding: 10px;
   color: rgb(80, 80, 80);
   margin-top: 15px;
-  animation: fadeinAnimation 1s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
   padding-bottom: 50px;
 }
 
 .mmaterial-LightTheme-0 {
-
   --bgColor: #efefef;
   --buttonColor: #303f9f;
+  --buttonHoverColor: #3949ab; /* Added hover color */
   --buttonFontColor: #ffffff;
   --fontColor: #000000;
   --divColor: #BBDEFB;
@@ -339,14 +406,12 @@ li {
   --bubbleBanner: #4444ff;
   --bubbleContent: #6666ff;
   --bubbleFontColor: #ffffff;
-
-
 }
 
 .mmaterial-DarkTheme-0 {
-
   --bgColor: #000000;
   --buttonColor: #82B1FF;
+  --buttonHoverColor: #90CAF9; /* Added hover color */
   --buttonFontColor: rgba(0, 0, 150, 255);
   --fontColor: #ffffff;
   --divColor: #000022;
@@ -354,78 +419,56 @@ li {
   --bubbleBanner: #82B1FF;
   --bubbleContent: #A6D3FF;
   --bubbleFontColor: #222222;
-
 }
-
-.mmaterial-ReadTheme {
-
-  --bgColor: #ffffff;
-  --buttonColor: #dddddd;
-  --buttonFontColor: #000000;
-  --fontColor: #000000;
-  --divColor: #ffffff;
-  --titleColor: #000000;
-  --bubbleBanner: #dddddd;
-  --bubbleContent: #ededed;
-  --bubbleFontColor: #000000;
-
-}
-
 
 .mmaterial-LightTheme-1 {
-
-  --bgColor: #efefef;
-  --buttonColor: #004D40;
-  --buttonFontColor: #ffffff;
-  --fontColor: #000000;
-  --divColor: #B2DFDB;
-  --titleColor: #00796B;
-  --bubbleBanner: #00796B;
-  --bubbleContent: #26A69A;
-  --bubbleFontColor: #ffffff;
-
-
+  --bgColor: #e8f5e9; /* Fondo claro verde */
+  --buttonColor: #388e3c; /* Color del botón verde */
+  --buttonHoverColor: #43a047; /* Color del botón en hover */
+  --buttonFontColor: #ffffff; /* Color de la fuente del botón */
+  --fontColor: #1b5e20; /* Color de la fuente principal */
+  --divColor: #c8e6c9; /* Color de los divs */
+  --titleColor: #2e7d32; /* Color del título */
+  --bubbleBanner: #66bb6a; /* Color del banner */
+  --bubbleContent: #81c784; /* Color del contenido del bubble */
+  --bubbleFontColor: #ffffff; /* Color de la fuente del bubble */
 }
 
 .mmaterial-DarkTheme-1 {
-
-  --bgColor: #000000;
-  --buttonColor: #A7FFEB;
-  --buttonFontColor: rgba(0, 150, 0, 255);
-  --fontColor: #ffffff;
-  --divColor: #001100;
-  --titleColor: #64FFDA;
-  --bubbleBanner: #64FFDA;
-  --bubbleContent: #A7FFEB;
-  --bubbleFontColor: #222222;
-
+  --bgColor: #1b5e20; /* Fondo oscuro verde */
+  --buttonColor: #a5d6a7; /* Color del botón claro */
+  --buttonHoverColor: #c8e6c9; /* Color del botón en hover */
+  --buttonFontColor: rgba(255, 255, 255, 255); /* Color de la fuente del botón */
+  --fontColor: #ffffff; /* Color de la fuente principal */
+  --divColor: #004d40; /* Color de los divs oscuros */
+  --titleColor: #a5d6a7; /* Color del título */
+  --bubbleBanner: #a5d6a7; /* Color del banner */
+  --bubbleContent: #c8e6c9; /* Color del contenido del bubble */
+  --bubbleFontColor: #000000; /* Color de la fuente del bubble */
 }
 
 .mmaterial-LightTheme-2 {
-
-  --bgColor: #efefef;
-  --buttonColor: #B71C1C;
-  --buttonFontColor: #ffffff;
-  --fontColor: #000000;
-  --divColor: #FFCDD2;
-  --titleColor: #E53935;
-  --bubbleBanner: #E53935;
-  --bubbleContent: #FF5252;
-  --bubbleFontColor: #ffffff;
-
-
+  --bgColor: #ffebee; /* Fondo claro rojo */
+  --buttonColor: #c62828; /* Color del botón rojo */
+  --buttonHoverColor: #d32f2f; /* Color del botón en hover */
+  --buttonFontColor: #ffffff; /* Color de la fuente del botón */
+  --fontColor: #b71c1c; /* Color de la fuente principal */
+  --divColor: #ef9a9a; /* Color de los divs */
+  --titleColor: #b71c1c; /* Color del título */
+  --bubbleBanner: #ef5350; /* Color del banner */
+  --bubbleContent: #e57373; /* Color del contenido del bubble */
+  --bubbleFontColor: #ffffff; /* Color de la fuente del bubble */
 }
 
 .mmaterial-DarkTheme-2 {
-
-  --bgColor: #000000;
-  --buttonColor: #FF8A80;
-  --buttonFontColor: rgba(150, 0, 0, 255);
-  --fontColor: #ffffff;
-  --divColor: #110000;
-  --titleColor: #FF5252;
-  --bubbleBanner: #E53935;
-  --bubbleContent: #FF8A80;
-  --bubbleFontColor: #222222;
-
+  --bgColor: #b71c1c; /* Fondo oscuro rojo */
+  --buttonColor: #ff8a80; /* Color del botón claro */
+  --buttonHoverColor: #ff5252; /* Color del botón en hover */
+  --buttonFontColor: rgba(255, 255, 255, 255); /* Color de la fuente del botón */
+  --fontColor: #ffffff; /* Color de la fuente principal */
+  --divColor: #8e0000; /* Color de los divs oscuros */
+  --titleColor: #ff8a80; /* Color del título */
+  --bubbleBanner: #ff8a80; /* Color del banner */
+  --bubbleContent: #ff5252; /* Color del contenido del bubble */
+  --bubbleFontColor: #000000; /* Color de la fuente del bubble */
 }
