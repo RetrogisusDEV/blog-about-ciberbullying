@@ -409,7 +409,7 @@ li {
 }
 
 .mmaterial-DarkTheme-0 {
-  --bgColor: #000000;
+  --bgColor: #000011;
   --buttonColor: #82B1FF;
   --buttonHoverColor: #90CAF9; /* Added hover color */
   --buttonFontColor: rgba(0, 0, 150, 255);
@@ -435,7 +435,7 @@ li {
 }
 
 .mmaterial-DarkTheme-1 {
-  --bgColor: #1b5e20; /* Fondo oscuro verde */
+  --bgColor: #001100; /* Fondo oscuro verde */
   --buttonColor: #a5d6a7; /* Color del botón claro */
   --buttonHoverColor: #c8e6c9; /* Color del botón en hover */
   --buttonFontColor: rgba(255, 255, 255, 255); /* Color de la fuente del botón */
@@ -461,7 +461,7 @@ li {
 }
 
 .mmaterial-DarkTheme-2 {
-  --bgColor: #b71c1c; /* Fondo oscuro rojo */
+  --bgColor: #110000; /* Fondo oscuro rojo */
   --buttonColor: #ff8a80; /* Color del botón claro */
   --buttonHoverColor: #ff5252; /* Color del botón en hover */
   --buttonFontColor: rgba(255, 255, 255, 255); /* Color de la fuente del botón */
@@ -472,3 +472,4 @@ li {
   --bubbleContent: #ff5252; /* Color del contenido del bubble */
   --bubbleFontColor: #000000; /* Color de la fuente del bubble */
 }
+

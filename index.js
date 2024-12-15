@@ -14,8 +14,8 @@ if (!localStorage.ThemeVar) {
   console.log('Default theme set');
 }
 
-let ThemeCurrent = parseInt(localStorage.ThemeVar);
-let ToneCurrent = parseInt(localStorage.ToneVar);
+var ThemeCurrent = parseInt(localStorage.ThemeVar);
+var ToneCurrent = parseInt(localStorage.ToneVar);
 
 // Initializing Theme
 applyTheme(ThemeCurrent, ToneCurrent);
@@ -25,7 +25,7 @@ function applyTheme(theme, tone) {
   const themes = ['LightTheme', 'DarkTheme', 'ReadTheme'];
   element.classList.remove(`mmaterial-ReadTheme`);
   // Remove all theme classes
-  themes.forEach((t, i) => {
+  themes.forEach((t) => {
     element.classList.remove(`mmaterial-${t}-0`, `mmaterial-${t}-1`, `mmaterial-${t}-2`);
   });
 
@@ -36,6 +36,10 @@ function applyTheme(theme, tone) {
     element.classList.add("mmaterial-ReadTheme");
     console.log("Read Optimized Theme Set - Tone: " + tone);
   }
+
+
+  ThemeCurrent = theme;
+  ToneCurrent = tone;
 
   // Update localStorage
   localStorage.setItem('ThemeVar', theme);
