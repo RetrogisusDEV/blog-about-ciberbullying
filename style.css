@@ -391,79 +391,79 @@ li {
 }
 
 .mmaterial-LightTheme-0 {
-  --bgColor: #efefef;
-  --buttonColor: #303f9f;
-  --buttonHoverColor: #3949ab; /* Added hover color */
-  --buttonFontColor: #ffffff;
-  --fontColor: #000000;
-  --divColor: #BBDEFB;
-  --titleColor: #0D47A1;
-  --bubbleBanner: #4444ff;
-  --bubbleContent: #6666ff;
-  --bubbleFontColor: #ffffff;
+  --bgColor: #FEF7FF;
+  --buttonColor: #6750A4;
+  --buttonHoverColor: #7F67BE;
+  --buttonFontColor: #FFFFFF;
+  --fontColor: #1C1B1F;
+  --divColor: #EADDFF;
+  --titleColor: #21005E;
+  --bubbleBanner: #6750A4;
+  --bubbleContent: #EADDFF;
+  --bubbleFontColor: #FFFFFF;
 }
 
 .mmaterial-DarkTheme-0 {
-  --bgColor: #1a1a2e;
-  --buttonColor: #0f3460;
-  --buttonHoverColor: #1f4068;
-  --buttonFontColor: #e94560;
-  --fontColor: #e94560;
-  --divColor: #16213e;
-  --titleColor: #e94560;
-  --bubbleBanner: #0f3460;
-  --bubbleContent: #1f4068;
-  --bubbleFontColor: #e94560;
+  --bgColor: #1C1B1F;
+  --buttonColor: #D0BCFF;
+  --buttonHoverColor: #E8DDFF;
+  --buttonFontColor: #381E72;
+  --fontColor: #E6E1E5;
+  --divColor: #4F378B;
+  --titleColor: #EADDFF;
+  --bubbleBanner: #D0BCFF;
+  --bubbleContent: #4F378B;
+  --bubbleFontColor: #381E72;
 }
 
 .mmaterial-LightTheme-1 {
-  --bgColor: #e8f5e9;
-  --buttonColor: #388e3c;
-  --buttonHoverColor: #43a047;
-  --buttonFontColor: #ffffff;
-  --fontColor: #1b5e20;
-  --divColor: #c8e6c9;
-  --titleColor: #2e7d32;
-  --bubbleBanner: #66bb6a;
-  --bubbleContent: #81c784;
-  --bubbleFontColor: #ffffff;
+  --bgColor: #F1F8E9;
+  --buttonColor: #006C4C;
+  --buttonHoverColor: #008D6E;
+  --buttonFontColor: #FFFFFF;
+  --fontColor: #1C1B1F;
+  --divColor: #A9FACD;
+  --titleColor: #00201A;
+  --bubbleBanner: #006C4C;
+  --bubbleContent: #A9FACD;
+  --bubbleFontColor: #00201A;
 }
 
 .mmaterial-DarkTheme-1 {
-  --bgColor: #1b1b1b;
-  --buttonColor: #00695c;
-  --buttonHoverColor: #004d40;
-  --buttonFontColor: #ffffff;
-  --fontColor: #ffffff;
-  --divColor: #004d40;
-  --titleColor: #00acc1;
-  --bubbleBanner: #00695c;
-  --bubbleContent: #004d40;
-  --bubbleFontColor: #ffffff;
+  --bgColor: #191C1A;
+  --buttonColor: #79D9A8;
+  --buttonHoverColor: #9BE5C2;
+  --buttonFontColor: #00382A;
+  --fontColor: #E1E3E1;
+  --divColor: #00503C;
+  --titleColor: #A9FACD;
+  --bubbleBanner: #79D9A8;
+  --bubbleContent: #00503C;
+  --bubbleFontColor: #00382A;
 }
 
 .mmaterial-LightTheme-2 {
-  --bgColor: #ffebee;
-  --buttonColor: #c62828;
-  --buttonHoverColor: #d32f2f;
-  --buttonFontColor: #ffffff;
-  --fontColor: #b71c1c;
-  --divColor: #ef9a9a;
-  --titleColor: #b71c1c;
-  --bubbleBanner: #ef5350;
-  --bubbleContent: #e57373;
-  --bubbleFontColor: #ffffff;
+  --bgColor: #FFECEC;
+  --buttonColor: #BA1A1A;
+  --buttonHoverColor: #DE3730;
+  --buttonFontColor: #FFFFFF;
+  --fontColor: #1C1B1B;
+  --divColor: #FFDAD6;
+  --titleColor: #410002;
+  --bubbleBanner: #BA1A1A;
+  --bubbleContent: #FFDAD6;
+  --bubbleFontColor: #410002;
 }
 
 .mmaterial-DarkTheme-2 {
-  --bgColor: #1a1a1a;
-  --buttonColor: #b71c1c;
-  --buttonHoverColor: #d32f2f;
-  --buttonFontColor: #ffffff;
-  --fontColor: #ffffff;
-  --divColor: #8e0000;
-  --titleColor: #ff8a80;
-  --bubbleBanner: #b71c1c;
-  --bubbleContent: #d32f2f;
-  --bubbleFontColor: #ffffff;
+  --bgColor: #201A1A;
+  --buttonColor: #FFB4AB;
+  --buttonHoverColor: #FFBAB3;
+  --buttonFontColor: #410002;
+  --fontColor: #E9E0E0;
+  --divColor: #5C0F0C;
+  --titleColor: #FFDAD6;
+  --bubbleBanner: #FFB4AB;
+  --bubbleContent: #5C0F0C;
+  --bubbleFontColor: #410002;
 }
