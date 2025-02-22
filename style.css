@@ -1,8 +1,3 @@
-/* all is free to use, in other project, no need same licence for use.
-you can contribute for FIX typos, or Formatting.
-retrogisusDEV 2024 */
-
-/* Fluent Design & Material You Inspired CSS by retrogisusDEV 2024 */
 :root {
   --fluent-blur: blur(24px);
   --fluent-shadow: 0 6px 10px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
@@ -409,67 +404,66 @@ li {
 }
 
 .mmaterial-DarkTheme-0 {
-  --bgColor: #000011;
-  --buttonColor: #82B1FF;
-  --buttonHoverColor: #90CAF9; /* Added hover color */
-  --buttonFontColor: rgba(0, 0, 150, 255);
-  --fontColor: #ffffff;
-  --divColor: #000022;
-  --titleColor: #82B1FF;
-  --bubbleBanner: #82B1FF;
-  --bubbleContent: #A6D3FF;
-  --bubbleFontColor: #222222;
+  --bgColor: #1a1a2e;
+  --buttonColor: #0f3460;
+  --buttonHoverColor: #1f4068;
+  --buttonFontColor: #e94560;
+  --fontColor: #e94560;
+  --divColor: #16213e;
+  --titleColor: #e94560;
+  --bubbleBanner: #0f3460;
+  --bubbleContent: #1f4068;
+  --bubbleFontColor: #e94560;
 }
 
 .mmaterial-LightTheme-1 {
-  --bgColor: #e8f5e9; /* Fondo claro verde */
-  --buttonColor: #388e3c; /* Color del botón verde */
-  --buttonHoverColor: #43a047; /* Color del botón en hover */
-  --buttonFontColor: #ffffff; /* Color de la fuente del botón */
-  --fontColor: #1b5e20; /* Color de la fuente principal */
-  --divColor: #c8e6c9; /* Color de los divs */
-  --titleColor: #2e7d32; /* Color del título */
-  --bubbleBanner: #66bb6a; /* Color del banner */
-  --bubbleContent: #81c784; /* Color del contenido del bubble */
-  --bubbleFontColor: #ffffff; /* Color de la fuente del bubble */
+  --bgColor: #e8f5e9;
+  --buttonColor: #388e3c;
+  --buttonHoverColor: #43a047;
+  --buttonFontColor: #ffffff;
+  --fontColor: #1b5e20;
+  --divColor: #c8e6c9;
+  --titleColor: #2e7d32;
+  --bubbleBanner: #66bb6a;
+  --bubbleContent: #81c784;
+  --bubbleFontColor: #ffffff;
 }
 
 .mmaterial-DarkTheme-1 {
-  --bgColor: #001100; /* Fondo oscuro verde */
-  --buttonColor: #a5d6a7; /* Color del botón claro */
-  --buttonHoverColor: #c8e6c9; /* Color del botón en hover */
-  --buttonFontColor: rgba(255, 255, 255, 255); /* Color de la fuente del botón */
-  --fontColor: #ffffff; /* Color de la fuente principal */
-  --divColor: #004d40; /* Color de los divs oscuros */
-  --titleColor: #a5d6a7; /* Color del título */
-  --bubbleBanner: #a5d6a7; /* Color del banner */
-  --bubbleContent: #c8e6c9; /* Color del contenido del bubble */
-  --bubbleFontColor: #000000; /* Color de la fuente del bubble */
+  --bgColor: #1b1b1b;
+  --buttonColor: #00695c;
+  --buttonHoverColor: #004d40;
+  --buttonFontColor: #ffffff;
+  --fontColor: #ffffff;
+  --divColor: #004d40;
+  --titleColor: #00acc1;
+  --bubbleBanner: #00695c;
+  --bubbleContent: #004d40;
+  --bubbleFontColor: #ffffff;
 }
 
 .mmaterial-LightTheme-2 {
-  --bgColor: #ffebee; /* Fondo claro rojo */
-  --buttonColor: #c62828; /* Color del botón rojo */
-  --buttonHoverColor: #d32f2f; /* Color del botón en hover */
-  --buttonFontColor: #ffffff; /* Color de la fuente del botón */
-  --fontColor: #b71c1c; /* Color de la fuente principal */
-  --divColor: #ef9a9a; /* Color de los divs */
-  --titleColor: #b71c1c; /* Color del título */
-  --bubbleBanner: #ef5350; /* Color del banner */
-  --bubbleContent: #e57373; /* Color del contenido del bubble */
-  --bubbleFontColor: #ffffff; /* Color de la fuente del bubble */
+  --bgColor: #ffebee;
+  --buttonColor: #c62828;
+  --buttonHoverColor: #d32f2f;
+  --buttonFontColor: #ffffff;
+  --fontColor: #b71c1c;
+  --divColor: #ef9a9a;
+  --titleColor: #b71c1c;
+  --bubbleBanner: #ef5350;
+  --bubbleContent: #e57373;
+  --bubbleFontColor: #ffffff;
 }
 
 .mmaterial-DarkTheme-2 {
-  --bgColor: #110000; /* Fondo oscuro rojo */
-  --buttonColor: #ff8a80; /* Color del botón claro */
-  --buttonHoverColor: #ff5252; /* Color del botón en hover */
-  --buttonFontColor: rgba(255, 255, 255, 255); /* Color de la fuente del botón */
-  --fontColor: #ffffff; /* Color de la fuente principal */
-  --divColor: #8e0000; /* Color de los divs oscuros */
-  --titleColor: #ff8a80; /* Color del título */
-  --bubbleBanner: #ff8a80; /* Color del banner */
-  --bubbleContent: #ff5252; /* Color del contenido del bubble */
-  --bubbleFontColor: #000000; /* Color de la fuente del bubble */
+  --bgColor: #1a1a1a;
+  --buttonColor: #b71c1c;
+  --buttonHoverColor: #d32f2f;
+  --buttonFontColor: #ffffff;
+  --fontColor: #ffffff;
+  --divColor: #8e0000;
+  --titleColor: #ff8a80;
+  --bubbleBanner: #b71c1c;
+  --bubbleContent: #d32f2f;
+  --bubbleFontColor: #ffffff;
 }
-
